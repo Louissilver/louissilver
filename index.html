@@ -14,7 +14,7 @@
 	</head>
 
 	<body>
-		<header>
+		<header id="header">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 				<a class="navbar-brand" href="#">Louissilver</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,19 +23,22 @@
 				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link text-light bg-dark" href="#">Início</a>
+							<a class="nav-link text-light bg-dark" href="index.html">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-light bg-dark" href="#">Sobre</a>
+							<a class="nav-link text-light bg-dark" href="#about">About me</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-light bg-dark" href="#">Profissional</a>
+							<a class="nav-link text-light bg-dark" href="#professional">Professional</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-light bg-dark" href="#">Acadêmico</a>
+							<a class="nav-link text-light bg-dark" href="#academic">Academic</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-light bg-dark" href="#">Contato</a>
+							<a class="nav-link text-light bg-dark" href="#skills">Skills</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light bg-dark" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -52,21 +55,21 @@
 					</ol>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img src="assets/img/carrossel-1.jpg" class="d-block w-100 imagem-carrossel" alt="...">
+							<img src="assets/img/carrossel-1.jpg" class="d-block w-100 imagem-carrossel-1" alt="...">
 							<div class="carousel-caption d-none d-md-block h-50">
-								<h5 class="display-2 font-weight-bold">Dedicado &amp; Curioso</h5>
+								<h5 class="display-2 font-weight-bold">Dedicated &amp; Curious</h5>
 							</div>
 						</div>
 						<div class="carousel-item">
-							<img src="assets/img/carrossel-2.jpg" class="d-block w-100 imagem-carrossel" alt="...">
+							<img src="assets/img/carrossel-2.jpg" class="d-block w-100 imagem-carrossel-2" alt="...">
 							<div class="carousel-caption d-none d-md-block h-50">
-								<h5 class="display-2 font-weight-bold">Sociável &amp; Comunicativo</h5>
+								<h5 class="display-2 font-weight-bold">Sociable &amp; Communicative</h5>
 							</div>
 						</div>
 						<div class="carousel-item">
-							<img src="assets/img/carrossel-3.jpg" class="d-block w-100 imagem-carrossel" alt="...">
+							<img src="assets/img/carrossel-3.jpg" class="d-block w-100 imagem-carrossel-3" alt="...">
 							<div class="carousel-caption d-none d-md-block h-50">
-								<h5 class="display-2 font-weight-bold">Criativo &amp; Responsável</h5>
+								<h5 class="display-2 font-weight-bold">Creative &amp; Responsible</h5>
 							</div>
 						</div>
 					</div>
@@ -86,7 +89,7 @@
 				<p class="text-right h4 pr-3">Sun Tzu</p>
 			</section>
 
-			<section id="sobre" class="px-2">
+			<section id="about" class="px-2">
 				<div class="card mb-3 card-solo text-light bg-dark p-5">
 					<div class="row no-gutters justify-content-center">
 						<div class="col-12 col-md-2">
@@ -94,114 +97,166 @@
 						</div>
 						<div class="col-12 col-md-10">
 							<div class="card-body">
-								<h5 class="card-title">Sobre mim</h5>
-								<p class="card-text text-break">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								<h5 class="card-title">About me</h5>
+								<p class="card-text text-break">
+									A young dreamer who recently started his activities in the IT area, as an automated software testing assistant. My goal is to become a systems analyst and be able to grow within the technology industry, either in the development area or in the test area. I have knowledge in programming logic and in the languages C, C#, Python and Javascript, and I also knows HTML and CSS. I really want to learn more about Python, to work with Machine Learning, Data Science and Neural Networks.
+								</p>
+								<p class="card-text text-break">
+									Graduated as an Electronics Technician by Fundação Liberato, one of my strongest points is knowing how to chase information and knowledge, always from secure sources. I have been participated in MOSTRATEC (Mostra Internacional de Ciência e Tecnologia) and twice in FEICIT (Feira Interna de Ciência e Tecnologia da Liberato), that is, I consider myself a researcher, and thanks to that, one of the things that I really like is to think about Innovative solutions.
+								</p>
+								<p class="card-text text-break">
+									One of my biggest goals is to have enough knowledge to develop websites, webapplicattions and mobile applications on my own and without difficulties, for that, I believe that after acquiring knowledge, I must put it into practice.
+								</p>
+								<p class="card-text"><small class="text-muted">Last updated 2020-09-14</small></p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section id="profissional" class="p-4">
-				<h1 class="title text-center mb-5">Experiência Profissional</h1>
+			<section id="professional" class="p-4">
+				<h1 class="title text-center mb-5">Professional Experience</h1>
 				<div class="row">
 					<div class="col-5 col-md-3">
 						<div class="list-group" id="list-tab" role="tablist">
-							<a class="list-group-item list-group-item-action bg-dark text-light pr-2" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
-							<a class="list-group-item list-group-item-action bg-dark text-light pr-2" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
-							<a class="list-group-item list-group-item-action bg-dark text-light pr-2" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
-							<a class="list-group-item list-group-item-action bg-dark text-light pr-2" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+							<a class="list-group-item list-group-item-action bg-dark text-light pr-2" id="gvdasa" data-toggle="list" href="#list-gvdasa" role="tab" aria-controls="messages">GVDASA Inteligência Educacional</a>
+							<a class="list-group-item list-group-item-action bg-dark text-light pr-2" id="controil" data-toggle="list" href="#list-controil" role="tab" aria-controls="profile">Freios Controil</a>
+							<a class="list-group-item list-group-item-action bg-dark text-light pr-2" id="altus" data-toggle="list" href="#list-altus" role="tab" aria-controls="home">Altus Sistemas de Automação</a>
 						</div>
 					</div>
 					<div class="col-7 col-md-8 border border-secondary bg-light">
 						<div class="tab-content" id="nav-tabContent">
-							<div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Irure enim occaecat labore sit qui aliquip reprehenderit amet velit. Deserunt ullamco ex elit nostrud ut dolore nisi officia magna sit occaecat laboris sunt dolor. Nisi eu minim cillum occaecat aute est cupidatat aliqua labore aute occaecat ea aliquip sunt amet. Aute mollit dolor ut exercitation irure commodo non amet consectetur quis amet culpa. Quis ullamco nisi amet qui aute irure eu. Magna labore dolor quis ex labore id nostrud deserunt dolor eiusmod eu pariatur culpa mollit in irure.</div>
-							<div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Irure enim occaecat labore sit qui aliquip reprehenderit amet velit. Deserunt ullamco ex elit nostrud ut dolore nisi officia magna sit occaecat laboris sunt dolor. Nisi eu minim cillum occaecat aute est cupidatat aliqua labore aute occaecat ea aliquip sunt amet. Aute mollit dolor ut exercitation irure commodo non amet consectetur quis amet culpa. Quis ullamco nisi amet qui aute irure eu. Magna labore dolor quis ex labore id nostrud deserunt dolor eiusmod eu pariatur culpa mollit in irure.</div>
-							<div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">Irure enim occaecat labore sit qui aliquip reprehenderit amet velit. Deserunt ullamco ex elit nostrud ut dolore nisi officia magna sit occaecat laboris sunt dolor. Nisi eu minim cillum occaecat aute est cupidatat aliqua labore aute occaecat ea aliquip sunt amet. Aute mollit dolor ut exercitation irure commodo non amet consectetur quis amet culpa. Quis ullamco nisi amet qui aute irure eu. Magna labore dolor quis ex labore id nostrud deserunt dolor eiusmod eu pariatur culpa mollit in irure.</div>
-							<div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Irure enim occaecat labore sit qui aliquip reprehenderit amet velit. Deserunt ullamco ex elit nostrud ut dolore nisi officia magna sit occaecat laboris sunt dolor. Nisi eu minim cillum occaecat aute est cupidatat aliqua labore aute occaecat ea aliquip sunt amet. Aute mollit dolor ut exercitation irure commodo non amet consectetur quis amet culpa. Quis ullamco nisi amet qui aute irure eu. Magna labore dolor quis ex labore id nostrud deserunt dolor eiusmod eu pariatur culpa mollit in irure.</div>
+							<div class="tab-pane fade" id="list-altus" role="tabpanel" aria-labelledby="altus">
+								<div class="card-body">
+									<p class="card-text"><small class="text-muted">July 2019/November 2019</small></p>
+									<h5 class="card-title">Administrative Assistant </h5>
+									<p class="card-text text-break">Main activities: Technical assistance administration, receiving and shipping customer material, customer service, receipt and issue of invoices. Technical and commercial offers management.</p>
+								</div>
+								<div class="card-body">
+									<p class="card-text"><small class="text-muted">June 2018/July 2019</small></p>
+									<h5 class="card-title">Test Technician</h5>
+									<p class="card-text text-break">Main activities: Automation of functional software tests using BDD, Gherkin, Selenium, C# and agile methodologies. Mass creation of data using SQL Server.</p>
+								</div>
+								<div class="card-body">
+									<p class="card-text"><small class="text-muted">December 2017/June 2018</small></p>
+									<h5 class="card-title">Test Assistant Intern </h5>
+									<p class="card-text text-break">Main activities: Automation of functional software tests using BDD, Gherkin, Selenium, C# and agile methodologies. Mass creation of data using SQL Server.</p>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="list-controil" role="tabpanel" aria-labelledby="controil">
+								<div class="card-body">
+									<p class="card-text"><small class="text-muted">November 2019/April 2020</small></p>
+									<h5 class="card-title">Intern Product Developer</h5>
+									<p class="card-text text-break">Main activities: Technical assistance administration, receiving and shipping customer material, customer service, receipt and issue of invoices. Technical and commercial offers management.</p>
+								</div>
+							</div>
+							<div class="tab-pane fade show active" id="list-gvdasa" role="tabpanel" aria-labelledby="gvdasa">
+								<div class="card-body">
+									<p class="card-text"><small class="text-muted">August 2020/now</small></p>
+									<h5 class="card-title">Software Testing QA Assistant</h5>
+									<p class="card-text text-break">Main activities: Automation of functional software tests using BDD, Gherkin, Selenium, C# and agile methodologies. Mass creation of data using SQL Server.</p>
+								</div>
+								<div class="card-body">
+									<p class="card-text"><small class="text-muted">April 2020/Augusto 2020</small></p>
+									<h5 class="card-title">Intern Software Tester </h5>
+									<p class="card-text text-break pb-2">Main activities: Assistance in the elaboration of scenarios, cases and implementation of automated tests and development and execution of tests using Selenium, C# and SQL Server.</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section id="academico" class="p-4">
-				<h1 class="title text-center mb-5">Formação Acadêmica</h1>
+			<section id="academic" class="p-4 mb-5">
+				<h1 class="title text-center mb-5">Education</h1>
 				<div class="row">
 					<div class="col-5 col-md-3">
 						<div class="list-group" id="list-tab" role="tablist">
-							<a class="list-group-item list-group-item-action bg-dark text-light pr-2" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
-							<a class="list-group-item list-group-item-action bg-dark text-light pr-2" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
-							<a class="list-group-item list-group-item-action bg-dark text-light pr-2" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
-							<a class="list-group-item list-group-item-action bg-dark text-light pr-2" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+							<a class="list-group-item list-group-item-action bg-dark text-light pr-2" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">College</a>
+							<a class="list-group-item list-group-item-action bg-dark text-light pr-2" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Highschool</a>
 						</div>
 					</div>
 					<div class="col-7 col-md-8 border border-secondary bg-light">
 						<div class="tab-content" id="nav-tabContent">
-							<div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Irure enim occaecat labore sit qui aliquip reprehenderit amet velit. Deserunt ullamco ex elit nostrud ut dolore nisi officia magna sit occaecat laboris sunt dolor. Nisi eu minim cillum occaecat aute est cupidatat aliqua labore aute occaecat ea aliquip sunt amet. Aute mollit dolor ut exercitation irure commodo non amet consectetur quis amet culpa. Quis ullamco nisi amet qui aute irure eu. Magna labore dolor quis ex labore id nostrud deserunt dolor eiusmod eu pariatur culpa mollit in irure.</div>
-							<div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Irure enim occaecat labore sit qui aliquip reprehenderit amet velit. Deserunt ullamco ex elit nostrud ut dolore nisi officia magna sit occaecat laboris sunt dolor. Nisi eu minim cillum occaecat aute est cupidatat aliqua labore aute occaecat ea aliquip sunt amet. Aute mollit dolor ut exercitation irure commodo non amet consectetur quis amet culpa. Quis ullamco nisi amet qui aute irure eu. Magna labore dolor quis ex labore id nostrud deserunt dolor eiusmod eu pariatur culpa mollit in irure.</div>
-							<div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">Irure enim occaecat labore sit qui aliquip reprehenderit amet velit. Deserunt ullamco ex elit nostrud ut dolore nisi officia magna sit occaecat laboris sunt dolor. Nisi eu minim cillum occaecat aute est cupidatat aliqua labore aute occaecat ea aliquip sunt amet. Aute mollit dolor ut exercitation irure commodo non amet consectetur quis amet culpa. Quis ullamco nisi amet qui aute irure eu. Magna labore dolor quis ex labore id nostrud deserunt dolor eiusmod eu pariatur culpa mollit in irure.</div>
-							<div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Irure enim occaecat labore sit qui aliquip reprehenderit amet velit. Deserunt ullamco ex elit nostrud ut dolore nisi officia magna sit occaecat laboris sunt dolor. Nisi eu minim cillum occaecat aute est cupidatat aliqua labore aute occaecat ea aliquip sunt amet. Aute mollit dolor ut exercitation irure commodo non amet consectetur quis amet culpa. Quis ullamco nisi amet qui aute irure eu. Magna labore dolor quis ex labore id nostrud deserunt dolor eiusmod eu pariatur culpa mollit in irure.</div>
+							<div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+								<div class="card-body">
+									<p class="card-text"><small class="text-muted">2020 - now</small></p>
+									<h5 class="card-title">Unilasalle - Canoas</h5>
+									<p class="card-text text-break">Bachelor – Computer Science</p>
+								</div>
+								<div class="card-body">
+									<p class="card-text"><small class="text-muted">2019 – 2020</small></p>
+									<h5 class="card-title">Instituto Federal Sul Rio Grandense</h5>
+									<p class="card-text text-break">Bachelor – Mechanical Engineering</p>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+								<div class="card-body">
+									<p class="card-text"><small class="text-muted">2014 - 2019</small></p>
+									<h5 class="card-title">Fundação Escola Técnica Liberato Salzano Vieira da Cunha</h5>
+									<p class="card-text text-break">Technician - Electronics</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
 			<section id="skills" class="p-2 bg-dark text-light">
-			<h1 class="title text-center mb-5">Skills</h1>
-			<h2 class="title text-left my-5">Soft Skills</h2>
+				<h1 class="title text-center mb-5">Skills</h1>
+				<h2 class="title text-left my-5">Soft Skills</h2>
 				<ul class="list-unstyled border border-light p-2">
 					<li class="media">
 						<img src="assets/icons/SVG/quill.svg" class="mr-3" alt="...">
 						<div class="media-body">
-							<h5 class="mt-0 mb-1">Resolução de Problemas</h5>
+							<h5 class="mt-0 mb-1">Problem Resolutions</h5>
 							Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 						</div>
 					</li>
 					<li class="media my-4">
 						<img src="assets/icons/SVG/bullhorn.svg" class="mr-3" alt="...">
 						<div class="media-body">
-							<h5 class="mt-0 mb-1">Comunicação</h5>
+							<h5 class="mt-0 mb-1">Communication</h5>
 							Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 						</div>
 					</li>
 					<li class="media my-4">
 						<img src="assets/icons/SVG/users.svg" class="mr-3" alt="...">
 						<div class="media-body">
-							<h5 class="mt-0 mb-1">Trabalho em Grupo</h5>
+							<h5 class="mt-0 mb-1">Workgroup</h5>
 							Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 						</div>
 					</li>
 					<li class="media my-4">
 						<img src="assets/icons/SVG/search.svg" class="mr-3" alt="...">
 						<div class="media-body">
-							<h5 class="mt-0 mb-1">Perfil Investigativo</h5>
+							<h5 class="mt-0 mb-1">Investigative Profile</h5>
 							Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 						</div>
 					</li>
 					<li class="media my-4">
 						<img src="assets/icons/SVG/shocked.svg" class="mr-3" alt="...">
 						<div class="media-body">
-							<h5 class="mt-0 mb-1">Curiosidade</h5>
+							<h5 class="mt-0 mb-1">Curiosity</h5>
 							Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 						</div>
 					</li>
 					<li class="media my-4">
 						<img src="assets/icons/SVG/bulb.svg" class="mr-3" alt="...">
 						<div class="media-body">
-							<h5 class="mt-0 mb-1">Criatividade</h5>
+							<h5 class="mt-0 mb-1">Criativity</h5>
 							Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 						</div>
 					</li>
 					<li class="media my-4">
 						<img src="assets/icons/SVG/rocket.svg" class="mr-3" alt="...">
 						<div class="media-body">
-							<h5 class="mt-0 mb-1">Produtividade</h5>
+							<h5 class="mt-0 mb-1">Productivity</h5>
 							Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 						</div>
 					</li>
 				</ul>
-				
+
 				<h2 class="title text-left my-5">Hard Skills</h2>
 				<ul class="list-unstyled border border-light p-2">
 					<li class="media">
@@ -261,89 +316,162 @@
 						</div>
 					</li>
 				</ul>
+
+				<h2 class="title text-left my-5">Languages</h2>
+				<ul class="list-unstyled border border-light p-2">
+					<li class="media">
+						<img src="assets/icons/SVG/language.svg" class="mr-3" alt="...">
+						<div class="media-body">
+							<h5 class="mt-0 mb-1">Portuguese</h5>
+							Native
+						</div>
+					</li>
+					<li class="media">
+						<img src="assets/icons/SVG/language.svg" class="mr-3" alt="...">
+						<div class="media-body">
+							<h5 class="mt-0 mb-1">English</h5>
+							Advanced
+						</div>
+					</li>
+					<li class="media">
+						<img src="assets/icons/SVG/language.svg" class="mr-3" alt="...">
+						<div class="media-body">
+							<h5 class="mt-0 mb-1">Spanish</h5>
+							Intermediate
+						</div>
+					</li>
+					<li class="media">
+						<img src="assets/icons/SVG/sign-language.svg" class="mr-3" alt="...">
+						<div class="media-body">
+							<h5 class="mt-0 mb-1">LIBRAS</h5>
+							Basic
+						</div>
+					</li>
+				</ul>
 			</section>
 
 			<section id="certificados" class="p-3">
-				<h1 class="title text-center mb-5">Certificados</h1>
+				<h1 class="title text-center mb-5">Certificates</h1>
 				<div class="accordion" id="accordionExample">
+
 					<div class="card">
 						<div class="card-header bg-dark" id="headingOne">
 							<h2 class="mb-0">
 								<button class="btn btn-link btn-block text-left collapsed text-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-									Collapsible Group Item #1
+									HTML &amp; CSS
 								</button>
 							</h2>
 						</div>
-
 						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 							<div class="card-body bg-secondary">
-								<a href="#" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill">A simple dark list group item</a>
-								<a href="#" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill">A simple dark list group item</a>
-								<a href="#" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill">A simple dark list group item</a>
-								<a href="#" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill">A simple dark list group item</a>
-								<a href="#" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill">A simple dark list group item</a>
+								<a href="https://cursos.alura.com.br/certificate/2eaa9828-e09b-4814-bab7-6f7414bb70d7" target="_blank" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill">HTML5 e CSS3 parte 1 - A primeira página da Web - Alura</a>
+								<a href="https://cursos.alura.com.br/certificate/4f9cd45d-3906-4840-8f9e-f23548a44a9c" target="_blank" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill">HTML5 e CSS3 parte 2 - Posicionamento, listas e navegação - Alura</a>
+								<a href="https://cursos.alura.com.br/certificate/2918aa58-f962-4fc1-9e9a-7548a69be1a8" target="_blank" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill">HTML5 e CSS3 parte 3 - Trabalhando com formulários e tabelas - Alura</a>
+								<a href="https://cursos.alura.com.br/certificate/16d6dee4-7e1b-4782-9b39-fb8907c9e849" target="_blank" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill">HTML5 e CSS3 - Avançando no CSS - Alura</a>
+								<a href="https://cursos.alura.com.br/certificate/2febfb0f-935c-43a7-83e9-5f526f96eb0f" target="_blank" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill">Web Design responsívo - Páginas que se adaptam do mobile ao desk</a>
+								<a href="https://cursos.alura.com.br/certificate/12bd5da1-4e04-4f35-9864-e0a3cc76d689" target="_blank" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill">Sass e Compass - Descomplicando o CSS - Alura</a>
+								<a href="https://cursos.alura.com.br/certificate/5661b3e5-06e7-48d2-bf45-9f82923c26c0" target="_blank" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill">Flexbox - Posicione os elementos na tela - Alura</a>
+								<a href="https://cursos.alura.com.br/certificate/b8b27859-97d9-4025-b1e0-d96ad966edbc" target="_blank" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill">CSS Grid - Simplificando layouts - Alura</a>
+								<a href="https://cursos.alura.com.br/certificate/fa0ad8ce-1d6a-4cbb-838f-a5fe9b7050b9" target="_blank" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill">Bootstrap4 - Criando uma landing page responsiva - Alura</a>
 							</div>
 						</div>
 					</div>
+
 					<div class="card">
 						<div class="card-header bg-dark" id="headingTwo">
 							<h2 class="mb-0">
 								<button class="btn btn-link btn-block text-left collapsed text-light" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-									Collapsible Group Item #2
+									JavaScript
 								</button>
 							</h2>
 						</div>
 						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 							<div class="card-body bg-secondary">
-								<a href="#" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light">A simple dark list group item</a>
-								<a href="#" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light">A simple dark list group item</a>
-								<a href="#" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light">A simple dark list group item</a>
-								<a href="#" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light">A simple dark list group item</a>
-								<a href="#" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light">A simple dark list group item</a>
+								<a href="https://cursos.alura.com.br/certificate/fe7753c4-75aa-4630-8be8-db5c16cb8429" target="_blank" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill">JavaScript - Primeiros passos com a linguagem - Alura</a>
+								<a href="https://cursos.alura.com.br/certificate/e79b3c3c-13ea-42d5-adc8-9f775dd4a364" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill" target="_blank">JavaScript - Programando na linguagem da Web - Alura</a>
+								<a href="https://www.udemy.com/certificate/UC-ac843b0e-e9b7-4b6c-b6de-c404cbff965d/" target="_blank" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill">Curso Completo do Desenvolvedor NodeJS e MongoDB - Udemy</a>
 							</div>
 						</div>
 					</div>
+
 					<div class="card">
 						<div class="card-header bg-dark" id="headingThree">
 							<h2 class="mb-0">
 								<button class="btn btn-link btn-block text-left collapsed text-light" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-									Collapsible Group Item #3
+									C#
 								</button>
 							</h2>
 						</div>
 						<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
 							<div class="card-body bg-secondary">
-								<a href="#" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light">A simple dark list group item</a>
-								<a href="#" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light">A simple dark list group item</a>
-								<a href="#" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light">A simple dark list group item</a>
-								<a href="#" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light">A simple dark list group item</a>
-								<a href="#" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light">A simple dark list group item</a>
+								<a href="https://drive.google.com/file/d/1EWquLz4hB8gvjUZRVWMc00aadnaGGtth/view?usp=sharing" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill" target="_blank">Linguagem de Programação C# Avançado - Fundação Bradesco</a>
+								<a href="https://www.udemy.com/certificate/UC-b967e9dd-58c1-459a-bdc6-7189dd55377b/" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill" target="_blank"> Entity Framework Core + Asp.NET Core Web API + SQL Server - Udemy</a>
+								<a href="https://www.udemy.com/certificate/UC-2653014e-19aa-4faf-9fb7-98949dafcda5/" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill" target="_blank"> C# COMPLETO 2020 Programação Orientada a Objetos + Projetos</a>
 							</div>
 						</div>
 					</div>
+
+					<div class="card">
+						<div class="card-header bg-dark" id="headingFour">
+							<h2 class="mb-0">
+								<button class="btn btn-link btn-block text-left collapsed text-light" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									Python
+								</button>
+							</h2>
+						</div>
+						<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+							<div class="card-body bg-secondary">
+								<a href="https://cursos.alura.com.br/certificate/9f5dd5df-c1bb-45be-81f1-271e480fd409" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill" target="_blank">Python 3 parte 1 - Introdução a nova versão da linguagem</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-header bg-dark" id="headingFive">
+							<h2 class="mb-0">
+								<button class="btn btn-link btn-block text-left collapsed text-light" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+									Web Acessibility
+								</button>
+							</h2>
+						</div>
+						<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+							<div class="card-body bg-secondary">
+								<a href="https://cursos.alura.com.br/certificate/ec4c3407-3de3-4812-beb6-194d1a4508b7" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill" target="_blank">Acessibilidade Web - Introdução a designs inclusivos</a>
+								<a href="https://cursos.alura.com.br/certificate/6e1f66b9-4e8a-4c38-bd0a-b480bf5ed4a4" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill" target="_blank">Acessibilidade Web parte 1 - Tornando seu front-end inclusivo</a>
+								<a href="#" class="list-group-item list-group-item-action list-group-item-dark bg-dark text-light mb-2 rounded-pill" target="_blank">Acessibilidade Web parte 2 - Componentes acessíveis com um pouco de JavaScript</a>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</section>
+
+
 
 		</main>
 
 		<footer id="footer" class="py-4 bg-dark text-white">
+			<div class="container-fluid text-center mt-3">
+				<p>E-mail: luisfernandosilveira23@gmail.com</p>
+				<p>Phone: +55 (51) 9 8493 5515</p>
+			</div>
 			<section id="redes-sociais">
 				<div class="container-fluid mt-5 mx-0">
 					<ul class="navbar-nav d-flex flex-row justify-content-around">
 						<li class="nav-item">
-							<a href="#" class="social-link text-light"><img src="assets/icons/SVG/facebook.svg">Facebook</a>
+							<a href="https://www.facebook.com/luisfernanndo.dasiveira" target="_blank" class="social-link text-light"><img src="assets/icons/SVG/facebook.svg">Facebook</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="social-link text-light"><img src="assets/icons/SVG/twitter.svg">Twitter</a>
+							<a href="https://twitter.com/_Lfs_Luis" target="_blank" class="social-link text-light"><img src="assets/icons/SVG/twitter.svg">Twitter</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="social-link text-light"><img src="assets/icons/SVG/instagram.svg">Instagram</a>
+							<a href="https://www.instagram.com/louisfsilver/" target="_blank" class="social-link text-light"><img src="assets/icons/SVG/instagram.svg">Instagram</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="social-link text-light"><img src="assets/icons/SVG/linkedin.svg">LinkedIn</a>
+							<a href="https://www.linkedin.com/in/luís-fernando-da-silveira-09391417b" target="_blank" class="social-link text-light"><img src="assets/icons/SVG/linkedin.svg">LinkedIn</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="social-link text-light"><img src="assets/icons/SVG/github.svg">Github</a>
+							<a href="https://github.com/Louissilver" target="_blank" class="social-link text-light"><img src="assets/icons/SVG/github.svg">Github</a>
 						</li>
 					</ul>
 				</div>
@@ -352,6 +480,40 @@
 				<small>Copyright &copy; | <a href="#" class="text-light">@Louissilver</a> 2020</small>
 			</div>
 		</footer>
+
+		<!-- Modal -->
+		<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header bg-dark text-light">
+						<h5 class="modal-title" id="exampleModalLabel">Contact</h5>
+						<button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="exampleFormControlInput1">Complete name:</label>
+								<input type="text" class="form-control" id="name" placeholder="Michael Douglas">
+							</div>
+							<div class="form-group">
+								<label for="exampleFormControlInput1">Email address:</label>
+								<input type="email" class="form-control" id="email" placeholder="name@example.com">
+							</div>
+							<div class="form-group">
+								<label for="exampleFormControlTextarea1">Message:</label>
+								<textarea class="form-control" id="message" rows="3"></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-dark text-light">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

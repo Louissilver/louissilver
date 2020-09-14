@@ -2,9 +2,21 @@ body{
 	background-color: #e0e0e0;	
 }
 
-.imagem-carrossel{
+.imagem-carrossel-1{
 	height: 200px;
 	object-fit: cover;
+}
+
+.imagem-carrossel-2{
+	height: 200px;
+	object-fit: cover;
+	object-position: top;
+}
+
+.imagem-carrossel-3{
+	height: 200px;
+	object-fit: cover;
+	object-position: center;
 }
 
 .imagem-card-solo{
@@ -30,7 +42,18 @@ body{
 		width: 200px;
 	}
 
-	.imagem-carrossel{
-		height: 500px;
+	.imagem-carrossel-1{
+		height: 600px;
+		object-fit: cover;
+	}
+
+	.imagem-carrossel-2{
+		height: 600px;
+		object-fit: cover;
+	}
+
+	.imagem-carrossel-3{
+		height: 600px;
+		object-fit: cover;
 	}
 }
