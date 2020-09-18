@@ -2,6 +2,33 @@ body{
 	background-color: #e0e0e0;	
 }
 
+.logo-special-color{
+	color: #009966!important;
+	text-shadow: 1px 1px black;
+}
+
+.title-special-color{
+	color: #009966;
+	text-shadow: 1px 1px 2px black;
+}
+
+.special-color{
+	color: #009966;
+}
+
+.special-border{
+	border-color: #009966!important;
+}
+
+.special-bg{
+	background-color: #009966;
+}
+
+.skill-border{
+	border-left: 3px solid;
+	border-color: #009966!important;
+}
+
 .imagem-carrossel-1{
 	height: 200px;
 	object-fit: cover;
